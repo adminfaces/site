@@ -540,3 +540,6 @@ footer {
     padding: 0.4in;
     font-size: 12pt;
     color: #444; } }
+section#about ul {
+  text-align: left;
+  list-style-type: disc; }

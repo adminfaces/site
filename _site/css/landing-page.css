@@ -30,10 +30,50 @@ h6 {
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
+    margin-top: 10px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/admin-logo-bg.png) no-repeat center center;
+    background: url(../img/admin-logo.png) no-repeat center center;
     background-size: contain;
+}
+
+
+
+@media (max-width: 992px) {
+    
+    .intro-header {
+        padding-top: 30px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .intro-header {
+        padding-top: 20px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .intro-message h3{
+        font-size: 18px;
+    }
+
+    .intro-message {
+        padding-bottom: 18%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .intro-header {
+        padding-top: 0;
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+
 }
 
 .intro-message {
@@ -55,7 +95,7 @@ h6 {
 }
 
 .intro-message > h3 {
-	color: dimgray;
+    color: dimgray;
 }
 
 @media(max-width:767px) {
@@ -164,4 +204,9 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+section#about ul {
+        text-align:left;
+        list-style-type:disc;
 }
