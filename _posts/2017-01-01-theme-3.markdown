@@ -1,0 +1,10 @@
+---
+layout: default
+img: theme-buttons.png
+category: theme
+id: theme3
+title: Buttons
+description: |
+---
+ 
+

@@ -1,6 +1,5 @@
-<section id="services">
-<!-- Page Content -->
 {% for post in site.posts reversed %}
+<section id="{{post.category}}">
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="content-section-a">
@@ -15,7 +14,9 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6 wow fadeIn" data-wow-duration="1500ms" data-wow-delay="500ms">
-                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                <a href="img/posts/{{ post.img }}" target="_blank">
+                    <img class="img-responsive" src="img/posts/{{ post.img }}" alt="">
+                </a>    
                 </div>
             </div>
 
@@ -38,8 +39,10 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6 wow fadeIn"  data-wow-duration="1500ms" data-wow-delay="500ms">
-                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
-                </div>
+					<a href="img/posts/{{ post.img }}" target="_blank"> <img
+						class="img-responsive" src="img/posts/{{ post.img }}" alt="">
+					</a>
+				</div>
             </div>
 
         </div>
@@ -52,7 +55,7 @@
  
 
 </script>
-{% endfor %}
 </section>
+{% endfor %}
 
 

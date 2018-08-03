@@ -1,10 +1,10 @@
 ---
 layout: default
 title: 
-subTitle: A PrimeFaces theme and JSF template based on Bootstrap and AdminLTE.
+subTitle: A PrimeFaces theme and JSF responsive template based on Bootstrap and AdminLTE
 ---
 
-
+{:.font-big}
 [**AdminFaces**](https://github.com/adminfaces) is an open source project which integrates [Primefaces](http://primefaces.org/), [Bootstrap](http://getbootstrap.com/) and [Admin LTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html/) in order to create fully responsive and mobile ready [JSF](https://javaserverfaces.java.net/) applications.
 
 

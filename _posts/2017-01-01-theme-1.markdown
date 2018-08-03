@@ -1,0 +1,12 @@
+---
+layout: default
+img: theme-forms.png
+category: theme
+id: theme1
+title: Admin Theme
+description: |
+---
+
+[Admin Theme](https://github.com/adminfaces/admin-theme) is an open source premium [PrimeFaces theme](http://primefaces.org/themes) where components are styled to look like [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html) and Bootstrap.
+
+For usage details see admin theme documentation [LINK]. Following are some screenshots of some components.
