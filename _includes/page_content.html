@@ -1,61 +1,20 @@
-{% for post in site.posts reversed %}
-<section id="{{post.category}}">
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
-    <div class="content-section-a">
+<section>
+	<div class="container">
 
-        <div class="container">
-
-            <div class="row">
-                <div id="{{ post.id }}" class="col-lg-5 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="lead">{{ post.content }}</div>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6 wow fadeIn" data-wow-duration="1500ms" data-wow-delay="500ms">
-                <a href="img/posts/{{ post.img }}" target="_blank">
-                    <img class="img-responsive" src="img/posts/{{ post.img }}" alt="">
-                </a>    
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    {% else %}
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div id="{{ post.id }}" class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="lead">{{ post.content }}</div>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6 wow fadeIn"  data-wow-duration="1500ms" data-wow-delay="500ms">
-					<a href="img/posts/{{ post.img }}" target="_blank"> <img
-						class="img-responsive" src="img/posts/{{ post.img }}" alt="">
-					</a>
-				</div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-    {% endif %}
+		<div class="row">
+			<div class="col-lg-10 col-sm-12">
+				<hr class="section-heading-spacer">
+				<div class="clearfix"></div>
+				<h2 class="section-heading">{{ page.title }}</h2>
+				<div class="lead">{{ page.content }}</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.container -->
+</section>
 <script>
  
 
 </script>
-</section>
-{% endfor %}
 
 

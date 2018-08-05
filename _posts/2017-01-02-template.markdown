@@ -1,0 +1,34 @@
+---
+layout: default
+img: template-menu-mode1.png
+category: Template
+id: theme
+title: Admin Template
+description: |
+---
+
+[Admin Template](https://github.com/adminfaces/admin-template) is a **fully responsive** [Java Server Faces](https://javaserverfaces.java.net/) `admin template` based on [Bootstrap](http://getbootstrap.com/) and [Admin LTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html/).
+
+Following is Admin Template main features: 
+
+<i class="fa fa-check"/> Fully **responsive**  
+<i class="fa fa-check"/> Two menu modes, `left` and `horizontal` based menu  
+<i class="fa fa-check"/> Layout customization via Control Sidebar(LINK)  
+ <i class="fa fa-check"/> Material design load bar  
+ <i class="fa fa-check"/> Material design flat buttons  
+<i class="fa fa-check"/> Touch enabled menu to slide in/out ([see here](https://cloud.githubusercontent.com/assets/1592273/25071807/dd37121e-2296-11e7-855c-8f20b59dcf5f.gif))  
+<i class="fa fa-check"/> Automatically activates (highlight) menu based on current page  
+<i class="fa fa-check"/> Breadcrumb based navigation, see [showcase example](http://admin-showcase-admin-showcase.7e14.starter-us-west-2.openshiftapps.com/showcase/pages/layout/breadcrumb.xhtml)  
+<i class="fa fa-check"/> Custom error pages  
+<i class="fa fa-check"/> Highly configurable  
+<i class="fa fa-check"/> High resolution and responsible icons based on Glyphycons and FontAwesome  
+<i class="fa fa-check"/> Builtin `dark` and `light` skins  
+<i class="fa fa-check"/> Menu itens search  
+<i class="fa fa-check"/> Back to previous screen when logging in again after session expiration  
+<i class="fa fa-check"/> Auto show and hide navbar based on page scroll  
+<i class="fa fa-check"/> Scroll to top  
+<i class="fa fa-check"/> Ripple effect based on [materialize css](http://materializecss.com/waves.html)  
+
+See <a href="/site/_pages/template-screenshots">
+	<i class="fa fa-file-image-o"/> screenshots	
+</a> for a better idea.

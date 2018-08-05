@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+	.intro-header {
+	display: none;
+	}
+</style>
 	{% include head.html %}
 
 	<body>
 		{% include header.html %}
-		{% include intro.html %}
-		{% include content.html %}
-		{% include docs.html %}
+		{% include page_content.html %}
 		{% include footer.html %}
 		{% include js.html %}
 	</body>

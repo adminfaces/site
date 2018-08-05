@@ -45,7 +45,7 @@ section#home {
 	}
 }
 
-@media ( max-width : 768px) {
+@media (max-width : 768px) {
 	.intro-header {
 		padding-top: 20px;
 		margin-top: 30px;

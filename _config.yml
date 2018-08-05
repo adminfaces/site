@@ -4,8 +4,8 @@ google_analytics:
 url: https://adminfaces.github.io
 baseurl: /site
 repository: adminfaces/admin-showcase
-
 markdown: kramdown
+include: ['_pages']
 permalink: pretty
 
 # ----------------------- #
