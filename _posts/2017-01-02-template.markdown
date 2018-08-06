@@ -15,7 +15,7 @@ Following is Admin Template main features:
 <i class="fa fa-check"/> Two menu modes, `left` and `horizontal` based menu  
 <i class="fa fa-check"/> Layout customization via Control Sidebar(LINK)  
  <i class="fa fa-check"/> Material design load bar  
- <i class="fa fa-check"/> Material design flat buttons  
+ <i class="fa fa-check"/> Material design inputs and flat buttons  
 <i class="fa fa-check"/> Touch enabled menu to slide in/out ([see here](https://cloud.githubusercontent.com/assets/1592273/25071807/dd37121e-2296-11e7-855c-8f20b59dcf5f.gif))  
 <i class="fa fa-check"/> Automatically activates (highlight) menu based on current page  
 <i class="fa fa-check"/> Breadcrumb based navigation, see [showcase example](http://admin-showcase-admin-showcase.7e14.starter-us-west-2.openshiftapps.com/showcase/pages/layout/breadcrumb.xhtml)  

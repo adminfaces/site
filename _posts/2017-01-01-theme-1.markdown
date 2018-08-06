@@ -11,4 +11,6 @@ description: |
 
 See <a href="/site/_pages/theme-screenshots">
 	<i class="fa fa-file-image-o"/> screenshots	
-</a> to get an idea. For usage details see <a href="#">Admin Theme documentation</a>.
+</a> to get an idea.  
+
+For usage details see <a href="#"><i class="fa fa-book"></i>Admin Theme documentation</a>.

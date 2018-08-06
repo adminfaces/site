@@ -20,3 +20,4 @@ See <a href="/site/_pages/template-screenshots">
 	<i class="fa fa-file-image-o"/> screenshots	
 </a> for a better idea.
 
+For usage details see <a href="#"><i class="fa fa-book"></i>Admin Template documentation</a>.
