@@ -204,10 +204,16 @@ section#about ul {
 
 .font-big {
 	font-size: 1.75rem;
+	font-weight: 500;
 }
 
 @media ( min-width : 1400px) {
 	body .container {
 		width: 1366px;
 	}
+}
+
+.intro-link {
+	font-weight: bold;
+	text-decoration: underline;
 }

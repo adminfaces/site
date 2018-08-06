@@ -2,7 +2,7 @@
 layout: default
 img: template-menu-mode1.png
 category: Template
-id: theme
+id: template
 title: Admin Template
 description: |
 ---
@@ -20,15 +20,3 @@ Following is Admin Template main features:
 <i class="fa fa-check"/> Automatically activates (highlight) menu based on current page  
 <i class="fa fa-check"/> Breadcrumb based navigation, see [showcase example](http://admin-showcase-admin-showcase.7e14.starter-us-west-2.openshiftapps.com/showcase/pages/layout/breadcrumb.xhtml)  
 <i class="fa fa-check"/> Custom error pages  
-<i class="fa fa-check"/> Highly configurable  
-<i class="fa fa-check"/> High resolution and responsible icons based on Glyphycons and FontAwesome  
-<i class="fa fa-check"/> Builtin `dark` and `light` skins  
-<i class="fa fa-check"/> Menu itens search  
-<i class="fa fa-check"/> Back to previous screen when logging in again after session expiration  
-<i class="fa fa-check"/> Auto show and hide navbar based on page scroll  
-<i class="fa fa-check"/> Scroll to top  
-<i class="fa fa-check"/> Ripple effect based on [materialize css](http://materializecss.com/waves.html)  
-
-See <a href="/site/_pages/template-screenshots">
-	<i class="fa fa-file-image-o"/> screenshots	
-</a> for a better idea.

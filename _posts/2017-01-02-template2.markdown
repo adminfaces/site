@@ -1,0 +1,22 @@
+---
+layout: default
+img: template-responsive.png
+category: Template
+id: template2
+title: Admin Template
+description: |
+---
+
+<i class="fa fa-check"/> Highly configurable  
+<i class="fa fa-check"/> High resolution and responsible icons based on Glyphycons and FontAwesome  
+<i class="fa fa-check"/> Builtin `dark` and `light` skins  
+<i class="fa fa-check"/> Menu itens search  
+<i class="fa fa-check"/> Back to previous screen when logging in again after session expiration  
+<i class="fa fa-check"/> Auto show and hide navbar based on page scroll  
+<i class="fa fa-check"/> Scroll to top  
+<i class="fa fa-check"/> Ripple effect based on [materialize css](http://materializecss.com/waves.html)  
+
+See <a href="/site/_pages/template-screenshots">
+	<i class="fa fa-file-image-o"/> screenshots	
+</a> for a better idea.
+
