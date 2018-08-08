@@ -1,0 +1,11 @@
+---
+layout: default
+img: showcase.png
+category: Showcase
+id: showcase
+title: Admin Showcase
+description: |
+---
+
+[Admin Showcase](https://github.com/adminfaces/admin-showcase) is a showcase web application, [deployed on openshift](http://admin-showcase-admin-showcase.7e14.starter-us-west-2.openshiftapps.com/showcase/), which demonstrates AdminFaces main features and components. Note that the Showcase uses Admin Template and Theme.
+
