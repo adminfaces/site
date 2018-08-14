@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Integrating Primefaces, Bootstrap and Admin LTE into your JSF application.">
     <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="/site/img/favicon.jpg"/>
+    
 
     <title>AdminFaces</title>
 
@@ -17,7 +19,8 @@
 
     <!-- Custom CSS -->
     <link href="/site/css/landing-page.css" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="/site/css/coderay.css"/>
 
     <!-- Custom Fonts -->
     <link href="/site/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,6 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 
 </head>
 
@@ -53,10 +57,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">  
             	<li>
-                    <a class="page-scroll" data-target="#about" href="/#about">About</a>
+                    <a class="page-scroll" data-target="#about" href="#about">About</a>
                 </li>            
                 <li>
-                    <a class="page-scroll" data-target="#Theme"  href="/#Theme">Theme</a>
+                    <a class="page-scroll" data-target="#Theme"  href="#Theme">Theme</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#Template">Template</a>
@@ -65,7 +69,7 @@
                     <a class="page-scroll" href="#Showcase">Showcase</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#Starter">Starter</a>
+                    <a class="page-scroll" href="#Starters">Starters</a>
                 </li>
                  <li>
                     <a class="page-scroll" href="#Designer">Designer</a>
@@ -157,9 +161,7 @@
 			</p>
 
 		 <p> <i class="fa fa-check" ></i>
-		 <a class="intro-link" href="https://github.com/adminfaces/admin-designer">Admin Designer</a>: It's the same showcase application with Admin Theme and
-			Admin Template bundled in order to make it easier to customize the
-			theme and the template.
+		 <a class="intro-link" href="https://github.com/adminfaces/admin-designer">Admin Designer</a>: A showcase application used to <b>customize</b> Admin Theme and Template. This application is used to evolve AdminFaces as well.
 		  </p>
 
 
@@ -208,13 +210,13 @@
         <div class="container">
 
             <div class="row">
-                <div id="/theme/2017/01/01/theme-1" class="col-lg-5 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div id="/theme" class="col-lg-5 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading"><span class="visible-xs">Theme: Admin Theme</span><span class="hidden-xs">Admin Theme</span></h2>
                     <div class="lead"><p><a href="https://github.com/adminfaces/admin-theme">Admin Theme</a> is an open source premium <a href="http://primefaces.org/themes">PrimeFaces theme</a> where components are styled to look like <a href="https://almsaeedstudio.com/themes/AdminLTE/index2.html">AdminLTE</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
 
-<p>See <a href="/site/_pages/theme-screenshots">
+<p>See <a href="/site/_pages/theme-screenshots" target="_blank">
 	<i class="fa fa-file-image-o"></i> screenshots	
 </a> to get an idea.</p>
 
@@ -249,16 +251,16 @@
         <div class="container">
 
             <div class="row">
-                <div id="/template/2017/01/02/template" class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div id="/template" class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading"><span class="visible-xs">Template: Admin Template</span><span class="hidden-xs">Admin Template</span></h2>
-                    <div class="lead"><p><a href="https://github.com/adminfaces/admin-template">Admin Template</a> is a <strong>fully responsive</strong> <a href="https://javaserverfaces.java.net/">Java Server Faces</a> <code class="highlighter-rouge">admin template</code> based on <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="https://almsaeedstudio.com/themes/AdminLTE/index2.html/">Admin LTE</a>.</p>
+                    <div class="lead"><p><a href="https://github.com/adminfaces/admin-template">Admin Template</a> is a <strong>fully responsive</strong> <a href="https://javaserverfaces.java.net/">Java Server Faces</a> <code>admin template</code> based on <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="https://almsaeedstudio.com/themes/AdminLTE/index2.html/">Admin LTE</a>.</p>
 
 <p>Following is Admin Template main features:</p>
 
 <p><i class="fa fa-check"></i> Fully <strong>responsive</strong><br />
-<i class="fa fa-check"></i> Two menu modes, <code class="highlighter-rouge">left</code> and <code class="highlighter-rouge">horizontal</code> based menu<br />
+<i class="fa fa-check"></i> Two menu modes, <code>left</code> and <code>horizontal</code> based menu<br />
 <i class="fa fa-check"></i> Layout customization via Control Sidebar(LINK)<br />
  <i class="fa fa-check"></i> Material design load bar<br />
  <i class="fa fa-check"></i> Material design inputs and flat buttons<br />
@@ -295,20 +297,20 @@
         <div class="container">
 
             <div class="row">
-                <div id="/template/2017/01/02/template2" class="col-lg-5 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div id="/template2" class="col-lg-5 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading"><span class="visible-xs">Template: Admin Template</span><span class="hidden-xs">Admin Template</span></h2>
                     <div class="lead"><p><i class="fa fa-check"></i> Highly configurable<br />
 <i class="fa fa-check"></i> High resolution and responsible icons based on Glyphycons and FontAwesome<br />
-<i class="fa fa-check"></i> Builtin <code class="highlighter-rouge">dark</code> and <code class="highlighter-rouge">light</code> skins<br />
+<i class="fa fa-check"></i> Builtin <code>dark</code> and <code>light</code> skins<br />
 <i class="fa fa-check"></i> Menu itens search<br />
 <i class="fa fa-check"></i> Back to previous screen when logging in again after session expiration<br />
 <i class="fa fa-check"></i> Auto show and hide navbar based on page scroll<br />
 <i class="fa fa-check"></i> Scroll to top<br />
 <i class="fa fa-check"></i> Ripple effect based on <a href="http://materializecss.com/waves.html">materialize css</a></p>
 
-<p>See <a href="/site/_pages/template-screenshots">
+<p>See <a href="/site/_pages/starters-screenshots" target="_blank">
 	<i class="fa fa-file-image-o"></i> screenshots	
 </a> for a better idea.</p>
 
@@ -318,6 +320,105 @@
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6 wow fadeIn" data-wow-duration="1500ms" data-wow-delay="500ms">
                 <a href="img/posts/template-responsive.png" target="_blank">
                     <img class="img-responsive" src="img/posts/template-responsive.png" alt="">
+                </a>    
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    
+<script>
+ 
+
+</script>
+</section>
+
+<section id="Showcase">
+  
+    
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div id="/showcase" class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><span class="visible-xs">Showcase: Admin Showcase</span><span class="hidden-xs">Admin Showcase</span></h2>
+                    <div class="lead"><p><a href="https://github.com/adminfaces/admin-showcase">Admin Showcase</a> is a showcase web application, deployed on openshift, which demonstrates AdminFaces main features and components. Note that the Showcase uses Admin Template and Theme.</p>
+
+<p>See AdminFaces Showcase <a href="http://admin-showcase-admin-showcase.7e14.starter-us-west-2.openshiftapps.com/showcase/" target="_blank"><strong>live demo here</strong> <i class="fa fa-share"></i></a>.</p>
+
+</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6 wow fadeIn"  data-wow-duration="1500ms" data-wow-delay="500ms">
+					<a href="img/posts/showcase.png" target="_blank"> <img
+						class="img-responsive" src="img/posts/showcase.png" alt="">
+					</a>
+				</div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    
+<script>
+ 
+
+</script>
+</section>
+
+<section id="Starters">
+  
+    
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div id="/starters" class="col-lg-5 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><span class="visible-xs">Starters: Admin Starters</span><span class="hidden-xs">Admin Starters</span></h2>
+                    <div class="lead"><p>Admin Starters are sample projects to get you started with AdminFaces. Below is a short description of current starters:</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/adminfaces/admin-starter">Admin Starter</a>: The default starter is a simple JavaEE 6(+) application without any persistence layer. You can run it on a JavaEE 6 or newer server via <a href="http://wildfly-swarm.io/">wildfly-swarm</a> and also via <code>Docker</code>.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/adminfaces/admin-starter-persistence" target="_blank">Admin Starter Persistence</a>: Admin Starter sample project with persistence layer based on Apache DeltaSpike module via Admin Persistence.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/adminfaces/admin-starter" target="_blank">Admin Starter Tomcat</a>: Admin Starter application for Tomcat.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/adminfaces/admin-starter-springboot" target="_blank">Admin Starter SpringBoot</a>: Admin Starter application using SpringBoot and <a href="https://github.com/joinfaces/">JoinFaces</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/adminfaces/admin-starter-shiro" target="_blank">Admin Starter Shiro</a>: Admin Starter application using <a href="https://shiro.apache.org/" target="_blank">Apache Shiro</a> for security.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/adminfaces/admin-starter-security" target="_blank">Admin Starter Security</a>: Admin Starter application using <code>JavaEE 8</code> <a href="https://javaee.github.io/security-spec/" target="_blank">security API</a> for authentication and authorization.</p>
+  </li>
+</ul>
+
+<p>See <a href="/site/_pages/starters-screenshots" target="_blank">
+	<i class="fa fa-file-image-o"></i> screenshots	
+</a> for a better idea.</p>
+
+<p>For running instructions access each starter <code>github README</code>.</p>
+</div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 wow fadeIn" data-wow-duration="1500ms" data-wow-delay="500ms">
+                <a href="img/posts/starter1.png" target="_blank">
+                    <img class="img-responsive" src="img/posts/starter1.png" alt="">
                 </a>    
                 </div>
             </div>

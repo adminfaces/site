@@ -16,7 +16,7 @@ description: |
 <i class="fa fa-check"/> Scroll to top  
 <i class="fa fa-check"/> Ripple effect based on [materialize css](http://materializecss.com/waves.html)  
 
-See <a href="/site/_pages/template-screenshots">
+See <a href="/site/_pages/starters-screenshots" target="_blank">
 	<i class="fa fa-file-image-o"/> screenshots	
 </a> for a better idea.
 

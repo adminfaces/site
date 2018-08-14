@@ -9,7 +9,7 @@ description: |
 
 [Admin Theme](https://github.com/adminfaces/admin-theme) is an open source premium [PrimeFaces theme](http://primefaces.org/themes) where components are styled to look like [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html) and [Bootstrap](http://getbootstrap.com/).
 
-See <a href="/site/_pages/theme-screenshots">
+See <a href="/site/_pages/theme-screenshots" target="_blank">
 	<i class="fa fa-file-image-o"/> screenshots	
 </a> to get an idea.  
 
