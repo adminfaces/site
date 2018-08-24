@@ -16,8 +16,10 @@ description: |
 <i class="fa fa-check"/> Scroll to top  
 <i class="fa fa-check"/> Ripple effect based on [materialize css](http://materializecss.com/waves.html)  
 
-See <a href="/site/_pages/starters-screenshots" target="_blank">
-	<i class="fa fa-file-image-o"/> screenshots	
+> <h4> <i class="fa fa-lightbulb-o"> </i> TIP</h4> See <a href="/site/_pages/starters-screenshots" target="_blank">
+ screenshots <i class="fa fa-file-image-o"/>	
 </a> for a better idea.
+{:.callout-info .callout-card}
 
-For usage details see <a href="#"><i class="fa fa-book"></i>Admin Template documentation</a>.
+> <h4> <i class="glyphicon glyphicon-info-sign"> </i> INFO</h4> For usage details see <a href="/site/docs/latest/index.html#admin_theme">Admin Template documentation <i class="fa fa-book"></i></a>.
+{:.callout-teal .callout-card}
