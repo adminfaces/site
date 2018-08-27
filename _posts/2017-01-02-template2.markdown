@@ -21,5 +21,5 @@ description: |
 </a> for a better idea.
 {:.callout-info .callout-card}
 
-> <h4> <i class="glyphicon glyphicon-info-sign"> </i> INFO</h4> For usage details see <a href="/site/docs/latest/index.html#admin_theme">Admin Template documentation <i class="fa fa-book"></i></a>.
+> <h4> <i class="glyphicon glyphicon-info-sign"> </i> INFO</h4> For usage details see <a href="/site/docs/latest/index.html#admin_theme" target="_blank">Admin Template documentation <i class="fa fa-book"></i></a>.
 {:.callout-teal .callout-card}

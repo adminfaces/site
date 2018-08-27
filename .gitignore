@@ -1,3 +1,6 @@
+#jekyll
+_*
+
 # Eclipse
 
 .project
@@ -59,3 +62,4 @@ _site/
 
 #linux te files
 *~
+

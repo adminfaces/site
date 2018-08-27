@@ -5,7 +5,7 @@ url: https://adminfaces.github.io
 baseurl: /site
 repository: adminfaces/admin-showcase
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 include: ['_pages']
 permalink: pretty
 gems:      [jekyll-paginate]
