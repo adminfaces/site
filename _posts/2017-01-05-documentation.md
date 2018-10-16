@@ -7,7 +7,7 @@ title: Documentation
 description: |
 ---
 
-Current version (under development) of documentation can be [found here]({{site.baseurl}}/docs/latest/.
+Current version (under development) of documentation can be [found here]({{site.baseurl}}/docs/latest/).
 
 Following is documentation for each released version:
 
