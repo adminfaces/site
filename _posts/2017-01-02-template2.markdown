@@ -7,7 +7,7 @@ title: Admin Template
 description: |
 ---
 
-<i class="fa fa-check"/> Highly configurable, see <a href="/site/docs/latest/index.html#configuration" target="_blank">configurations documentation</a>
+<i class="fa fa-check"/> Highly configurable, see <a href="/site/docs/latest/index.html#configuration" target="_blank">configurations documentation</a>  
 <i class="fa fa-check"/> High resolution and responsible icons based on Glyphycons and FontAwesome  
 <i class="fa fa-check"/> Builtin `dark` and `light` skins  
 <i class="fa fa-check"/> Menu itens search  
