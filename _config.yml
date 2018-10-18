@@ -42,6 +42,8 @@ disqus:
 social:
   - title: github
     url: https://github.com/adminfaces
+  - title: twitter
+    url: https://twitter.com/admin_faces/  
     
 # Outputting
 permalink:     /:title.html
