@@ -35,14 +35,7 @@ description: |
 </a>
 
 
- <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>                    
-                    
-<a href="/site/img/posts/theme-messages.png" target="_blank">
-		<img class="img-responsive" src="/site/img/posts/theme-messages.png" alt="">
-</a>  
-
- <hr class="section-heading-spacer">
+<hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     
 <a href="/site/img/posts/theme-menus.png" target="_blank">
