@@ -695,6 +695,35 @@ Most of the above features can be disabled via <a href="#configuration">configur
 </tr>
 </table>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Since <code>admin-template RC21</code> the template is compatible with PrimeFaces <strong>6.2</strong> and newer versions. To use the template with older PrimeFaces version, use the <strong>legacy classifier</strong>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
+    <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
+    <span class="tag">&lt;artifactId&gt;</span>admin-template<span class="tag">&lt;/artifactId&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;classifier&gt;</span>legacy<span class="tag">&lt;/classifier&gt;</span>
+<span class="tag">&lt;/dependency&gt;</span>
+<span class="tag">&lt;dependency&gt;</span>
+    <span class="tag">&lt;groupId&gt;</span>org.primefaces<span class="tag">&lt;/groupId&gt;</span>
+    <span class="tag">&lt;artifactId&gt;</span>primefaces<span class="tag">&lt;/artifactId&gt;</span>
+    <span class="tag">&lt;version&gt;</span>6.1<span class="tag">&lt;/version&gt;</span>
+<span class="tag">&lt;/dependency&gt;</span></code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>With the template dependency in classpath now you can use <code>admin</code> facelets template into your JSF pages.</p>
 </div>
@@ -2469,7 +2498,7 @@ Besides filtering the <code>filter</code> helper class also holds <strong>pagina
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0-RC21-SNAPSHOT<br>
-Last updated 2019-01-30 13:30:15 UTC
+Last updated 2019-02-03 20:12:53 UTC
 </div>
 </div>
 </body>
