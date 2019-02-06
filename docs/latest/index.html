@@ -24,7 +24,7 @@
 <div id="header">
 <h1>AdminFaces</h1>
 <div class="details">
-<span id="revnumber">version 1.0.0-RC21-SNAPSHOT</span>
+<span id="revnumber">version 1.0.0-RC21</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -54,7 +54,8 @@
 <li><a href="#features">3.1. Features</a></li>
 <li><a href="#usage_2">3.2. Usage</a>
 <ul class="sectlevel3">
-<li><a href="#example">3.2.1. Example</a></li>
+<li><a href="#legacy_classifier">3.2.1. Legacy classifier</a></li>
+<li><a href="#example">3.2.2. Example</a></li>
 </ul>
 </li>
 <li><a href="#application_template">3.3. Application template</a>
@@ -235,7 +236,7 @@
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
 </div>
@@ -381,7 +382,7 @@ Bootstrap less is not maintained in this project only it&#8217;s mixins.
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
 </div>
@@ -397,7 +398,7 @@ Bootstrap less is not maintained in this project only it&#8217;s mixins.
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
     <span class="tag">&lt;classifier&gt;</span>dev<span class="tag">&lt;/classifier&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
@@ -414,7 +415,7 @@ Bootstrap less is not maintained in this project only it&#8217;s mixins.
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
     <span class="tag">&lt;classifier&gt;</span>without-bootstrap<span class="tag">&lt;/classifier&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
@@ -431,7 +432,7 @@ Bootstrap less is not maintained in this project only it&#8217;s mixins.
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
     <span class="tag">&lt;classifier&gt;</span>without-jsf<span class="tag">&lt;/classifier&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
@@ -453,7 +454,7 @@ Bootstrap less is not maintained in this project only it&#8217;s mixins.
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
     <span class="tag">&lt;classifier&gt;</span>no-fonts<span class="tag">&lt;/classifier&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
@@ -475,7 +476,7 @@ Sometimes a theme update even introduces conflicts and only clearing browser cac
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
     <span class="tag">&lt;classifier&gt;</span>no-cache<span class="tag">&lt;/classifier&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
@@ -488,7 +489,7 @@ Sometimes a theme update even introduces conflicts and only clearing browser cac
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;context-param&gt;</span>
     <span class="tag">&lt;param-name&gt;</span>primefaces.THEME<span class="tag">&lt;/param-name&gt;</span>
-    <span class="tag">&lt;param-value&gt;</span>admin-1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/param-value&gt;</span>
+    <span class="tag">&lt;param-value&gt;</span>admin-1.0.0-RC21<span class="tag">&lt;/param-value&gt;</span>
 <span class="tag">&lt;/context-param&gt;</span></code></pre>
 </div>
 </div>
@@ -653,7 +654,7 @@ Most of the above features can be disabled via <a href="#configuration">configur
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-template<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span></code></pre>
 </div>
 </div>
@@ -672,7 +673,7 @@ Most of the above features can be disabled via <a href="#configuration">configur
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-theme<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span>
 
 <span class="tag">&lt;dependency&gt;</span>
@@ -695,6 +696,8 @@ Most of the above features can be disabled via <a href="#configuration">configur
 </tr>
 </table>
 </div>
+<div class="sect3">
+<h4 id="legacy_classifier"><a class="anchor" href="#legacy_classifier"></a>3.2.1. Legacy classifier</h4>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -710,7 +713,7 @@ Most of the above features can be disabled via <a href="#configuration">configur
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>com.github.adminfaces<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>admin-template<span class="tag">&lt;/artifactId&gt;</span>
-    <span class="tag">&lt;version&gt;</span>1.0.0-RC21-SNAPSHOT<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;version&gt;</span>1.0.0-RC21<span class="tag">&lt;/version&gt;</span>
     <span class="tag">&lt;classifier&gt;</span>legacy<span class="tag">&lt;/classifier&gt;</span>
 <span class="tag">&lt;/dependency&gt;</span>
 <span class="tag">&lt;dependency&gt;</span>
@@ -727,8 +730,9 @@ Most of the above features can be disabled via <a href="#configuration">configur
 <div class="paragraph">
 <p>With the template dependency in classpath now you can use <code>admin</code> facelets template into your JSF pages.</p>
 </div>
+</div>
 <div class="sect3">
-<h4 id="example"><a class="anchor" href="#example"></a>3.2.1. Example</h4>
+<h4 id="example"><a class="anchor" href="#example"></a>3.2.2. Example</h4>
 <div class="paragraph">
 <p>Consider the following sample page:</p>
 </div>
@@ -2497,8 +2501,8 @@ Besides filtering the <code>filter</code> helper class also holds <strong>pagina
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0.0-RC21-SNAPSHOT<br>
-Last updated 2019-02-05 16:17:47 UTC
+Version 1.0.0-RC21<br>
+Last updated 2019-02-06 09:44:15 UTC
 </div>
 </div>
 </body>
