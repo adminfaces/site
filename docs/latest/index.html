@@ -1051,7 +1051,8 @@ admin.rippleMobileOnly=true <i class="conum" data-value="26"></i><b>(26)</b>
 admin.renderMenuSearch=true <i class="conum" data-value="27"></i><b>(27)</b>
 admin.autoHideMessages=true <i class="conum" data-value="28"></i><b>(28)</b>
 admin.messagesHideTimeout=2500 <i class="conum" data-value="29"></i><b>(29)</b>
-admin.iconsEffect=true <i class="conum" data-value="30"></i><b>(30)</b></pre>
+admin.iconsEffect=true <i class="conum" data-value="30"></i><b>(30)</b>
+admin.renderAsterisks=false</pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1176,17 +1177,10 @@ admin.iconsEffect=true <i class="conum" data-value="30"></i><b>(30)</b></pre>
 <td><i class="conum" data-value="30"></i><b>30</b></td>
 <td>Enables material effect when icons (e.g modal close, calendar) are clicked.</td>
 </tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
 <tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-You don&#8217;t need to declare all values in your admin-config.properties, you can specify only the ones you need in order to change.
-</td>
+<td><i class="conum" data-value="31"></i><b>31</b></td>
+<td>Render asterisks on p:outputLabels tied to required fields.<br>
+IMPORTANT: You don&#8217;t need to declare all values in your admin-config.properties, you can specify only the ones you need in order to change.</td>
 </tr>
 </table>
 </div>
@@ -1197,7 +1191,7 @@ You don&#8217;t need to declare all values in your admin-config.properties, you 
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Since vRC16 config properties can be passed as Java <code>system properties</code>.
+Since vRC16 config properties can be passed as Java <code>System properties</code> or <code>Environment variables</code>.
 </td>
 </tr>
 </table>
@@ -2502,7 +2496,7 @@ Besides filtering the <code>filter</code> helper class also holds <strong>pagina
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0-RC21<br>
-Last updated 2019-03-18 12:17:16 UTC
+Last updated 2019-03-18 12:24:42 UTC
 </div>
 </div>
 </body>
