@@ -117,7 +117,23 @@
 <li><a href="#sample_application">7.5. Sample application</a></li>
 </ul>
 </li>
-<li><a href="#admin_mobile">8. Admin Mobile</a></li>
+<li><a href="#scaffold">8. Scaffold</a>
+<ul class="sectlevel2">
+<li><a href="#installation">8.1. Installation</a></li>
+<li><a href="#commands">8.2. Commands</a>
+<ul class="sectlevel3">
+<li><a href="#strong_adminfaces_setup_strong">8.2.1. <strong>AdminFaces: Setup</strong></a></li>
+<li><a href="#strong_adminfaces_scaffold_strong">8.2.2. <strong>AdminFaces: Scaffold</strong></a></li>
+<li><a href="#strong_adminfaces_scaffold_config_strong">8.2.3. <strong>AdminFaces: Scaffold config</strong></a></li>
+<li><a href="#strong_adminfaces_test_harness_setup_strong">8.2.4. <strong>AdminFaces: Test harness setup</strong></a></li>
+<li><a href="#strong_adminfaces_new_service_test_strong">8.2.5. <strong>AdminFaces: New service test</strong></a></li>
+</ul>
+</li>
+<li><a href="#demo_video">8.3. Demo video</a></li>
+<li><a href="#generated_application">8.4. Generated application</a></li>
+</ul>
+</li>
+<li><a href="#admin_mobile">9. Admin Mobile</a></li>
 </ul>
 </div>
 </div>
@@ -1760,7 +1776,7 @@ Declare the param as direct child of <code>ui:composion</code> otherwise it will
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./images/showcase.png" alt="showcase">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/showcase.png"><img src="./images/showcase.png" alt="showcase"></a>
 </div>
 </div>
 <div class="sect2">
@@ -2470,7 +2486,303 @@ Besides filtering the <code>filter</code> helper class also holds <strong>pagina
 </div>
 </div>
 <div class="sect1">
-<h2 id="admin_mobile"><a class="anchor" href="#admin_mobile"></a>8. Admin Mobile</h2>
+<h2 id="scaffold"><a class="anchor" href="#scaffold"></a>8. Scaffold</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Scaffolding or <code>code generation</code> for AdminFaces is brought by <a href="http://github.com/adminfaces/admin-addon" target="_blank" rel="noopener">Admin Addon</a>, a <a href="https://forge.jboss.org/" target="_blank" rel="noopener">JBoss Forge</a> addon that generates code for AdminFaces applications.</p>
+</div>
+<div class="paragraph">
+<p>The addon enables AdminFaces <code>setup</code>, <code>scaffold from JPA entities</code>, <code>test-setup</code>, <code>new service tests</code> and <code>scaffold config</code> commands.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-addon.png?raw=true"><img src="./images/admin-addon.png" alt="admin addon"></a>
+</div>
+</div>
+<div class="sect2">
+<h3 id="installation"><a class="anchor" href="#installation"></a>8.1. Installation</h3>
+<div class="paragraph">
+<p>Use install addon from git command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>addon-install-from-git --url https://github.com/adminfaces/admin-addon.git</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>or</code> install from catalog:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/install-from-catalog.png?raw=true"><img src="./images/install-from-catalog.png" alt="install from catalog"></a>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="commands"><a class="anchor" href="#commands"></a>8.2. Commands</h3>
+<div class="paragraph">
+<p>Below is a detailed description of each command provided by AdminFaces Addon.</p>
+</div>
+<div class="sect3">
+<h4 id="strong_adminfaces_setup_strong"><a class="anchor" href="#strong_adminfaces_setup_strong"></a>8.2.1. <strong>AdminFaces: Setup</strong></h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>It will install AdminFaces dependencies, resources and initial configuration.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="strong_adminfaces_scaffold_strong"><a class="anchor" href="#strong_adminfaces_scaffold_strong"></a>8.2.2. <strong>AdminFaces: Scaffold</strong></h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>In order to enable <strong>scaffold generate</strong> command you first need to execute <strong>Scaffold setup</strong> command, see images below.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/scaffold-setup.png?raw=true"><img src="./images/scaffold-setup.png" alt="scaffold setup"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/scaffold-generate01.png?raw=true"><img src="./images/scaffold-generate01.png" alt="scaffold generate01"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/scaffold-generate02.png?raw=true"><img src="./images/scaffold-generate02.png" alt="scaffold generate02"></a>
+</div>
+</div>
+<div class="paragraph">
+<p><code>Scaffold generate</code> will create crud, including list, form pages and menu entry, on top of selected entities. The generated crud is based on <a href="http://github.com/adminfaces/admin-persistence/" target="_blank" rel="noopener">admin-persistence</a> framework.</p>
+</div>
+<div class="sect4">
+<h5 id="scaffold_limitations"><a class="anchor" href="#scaffold_limitations"></a>Scaffold limitations</h5>
+<div class="paragraph">
+<p>To get most of scaffold command and to not generate invalid code, follow these two rules:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use <strong>field based access</strong> on your JPA entities, more <a href="https://thoughts-on-java.org/access-strategies-in-jpa-and-hibernate/" target="_blank" rel="noopener">details here</a>. The scaffold command <strong>doesn&#8217;t support</strong> method (property) based access.</p>
+</li>
+<li>
+<p>Use bidirectional relationships, <a href="https://thoughts-on-java.org/hibernate-tips-map-bidirectional-many-one-association/" target="_blank" rel="noopener">see here</a></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="generate_entities_from_database"><a class="anchor" href="#generate_entities_from_database"></a>Generate entities from database</h5>
+<div class="paragraph">
+<p>The recommended way to generate JPA entities from database is to use NetBeans, <a href="https://www.javacodegeeks.com/2016/02/netbeans-java-ee-tip-1-entity-classes-database.html" target="_blank" rel="noopener">see here</a>.</p>
+</div>
+<div class="paragraph">
+<p>It will use field based access and depending on your database schema it will use bidirectional associations.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="strong_adminfaces_scaffold_config_strong"><a class="anchor" href="#strong_adminfaces_scaffold_config_strong"></a>8.2.3. <strong>AdminFaces: Scaffold config</strong></h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>After scaffold generation the addon will create default scaffold configuration files under <code>src/main/resources/scaffold</code> for each entity and also a <code>global-config.yml</code> file. These configuration files default values are based on the entities provided on scaffold generation and the global file.</p>
+</div>
+<div class="paragraph">
+<p>In order to change scaffold configuration for each entity or the global configuration you either can edit the files manually or use <strong>AdminFaces: Scaffold config</strong> command.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-scaffold-config01.png?raw=true"><img src="./images/admin-scaffold-config01.png" alt="admin scaffold config01"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-scaffold-config02.png?raw=true"><img src="./images/admin-scaffold-config02.png" alt="admin scaffold config02"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-scaffold-config03.png?raw=true"><img src="./images/admin-scaffold-config03.png" alt="admin scaffold config03"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-scaffold-config04.png?raw=true"><img src="./images/admin-scaffold-config04.png" alt="admin scaffold config04"></a>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="strong_adminfaces_test_harness_setup_strong"><a class="anchor" href="#strong_adminfaces_test_harness_setup_strong"></a>8.2.4. <strong>AdminFaces: Test harness setup</strong></h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>It will setup <code>integration tests</code> dependencies and resource files such as <a href="https://deltaspike.apache.org/documentation/test-control.html" target="_blank" rel="noopener">DeltaSpike test control</a> and <a href="https://github.com/database-rider/database-rider" target="_blank" rel="noopener">Database Rider</a>.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/test-harness-setup.png?raw=true"><img src="./images/test-harness-setup.png" alt="test harness setup"></a>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="strong_adminfaces_new_service_test_strong"><a class="anchor" href="#strong_adminfaces_new_service_test_strong"></a>8.2.5. <strong>AdminFaces: New service test</strong></h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>The <code>Test harness setup</code> command will enable the <strong>New service test</strong> which will generate integration tests based on service classes. The command will also generare <code>dbunit yml datasets</code> based on the service entity.</p>
+</div>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-new-service-test.png?raw=true"><img src="./images/admin-new-service-test.png" alt="admin new service test"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://raw.githubusercontent.com/adminfaces/admin-docs/master/src/docs/images/admin-new-service-test02.png?raw=true"><img src="./images/admin-new-service-test02.png" alt="admin new service test02"></a>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use <a href="https://github.com/database-rider/dbunit-addon">dbunit-addon</a> to <code>generate test datasets</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="demo_video"><a class="anchor" href="#demo_video"></a>8.3. Demo video</h3>
+
+</div>
+<div class="sect2">
+<h3 id="generated_application"><a class="anchor" href="#generated_application"></a>8.4. Generated application</h3>
+<div class="paragraph">
+<p>You can find the generated application by AdminFaces scaffold here: <a href="https://github.com/adminfaces/generated-scaffold-app/" class="bare">https://github.com/adminfaces/generated-scaffold-app/</a></p>
+</div>
+<div class="paragraph">
+<p>It was generated using the following commands (you can paste all commands [at once] on the forge console in eclipse ide or using the forge on command line):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>clear;
+
+project-new --named admin-app --top-level-package com.github.adminfaces.app --type war --final-name admin-app --version 1.0 ;
+
+jpa-setup --persistence-unit-name adminPU --jpaVersion 2.1 --provider Hibernate --container JBOSS_EAP7 --db-type H2 --data-source-name java:jboss/datasources/ExampleDS ;
+
+cdi-setup --cdiVersion 1.1 ;
+
+ejb-setup --ejbVersion 3.2 ;
+
+faces-setup --facesVersion 2.2 ;
+
+servlet-setup --servletVersion 3.1 ;
+
+javaee-setup --java-ee-version 7 ;
+
+adminfaces-setup ;
+
+# entities #
+
+jpa-new-entity --named Talk ;
+
+jpa-new-field --named title ;
+
+jpa-new-field --named description --length 2000 ;
+
+jpa-new-field --named date --type java.util.Date --temporal-type DATE ;
+
+constraint-add --on-property title --constraint NotNull ;
+
+constraint-add --on-property description --constraint Size --max 2000 ;
+
+constraint-add --on-property date --constraint NotNull ;
+
+jpa-new-entity --named Room ;
+
+jpa-new-field --named name --length 20 ;
+
+jpa-new-field --named capacity --type java.lang.Short ;
+
+jpa-new-field --named hasWifi --type java.lang.Boolean ;
+
+constraint-add --on-property name --constraint NotNull ;
+
+constraint-add --on-property capacity --constraint NotNull ;
+
+jpa-new-embeddable --named Address ;
+
+jpa-new-field --named street --length 50 --not-nullable ;
+
+jpa-new-field --named city  --length 50 --not-nullable ;
+
+jpa-new-field --named zipcode --columnName --length 10 --not-nullable --type java.lang.Integer ;
+
+jpa-new-field --named state ;
+
+jpa-new-entity --named Speaker ;
+
+jpa-new-field --named firstname ;
+
+jpa-new-field --named surname ;
+
+jpa-new-field --named bio --length 2000 ;
+
+jpa-new-field --named twitter ;
+
+jpa-new-field --named talks --type com.github.adminfaces.app.model.Talk --relationship-type One-to-Many --inverse-field-name speaker ;
+
+jpa-new-field --named address --entity --type com.github.adminfaces.app.model.Address --relationship-type Embedded ;
+
+constraint-add --on-property firstname --constraint NotNull ;
+
+constraint-add --on-property surname --constraint NotNull ;
+
+constraint-add --on-property bio --constraint Size --max 2000 ;
+
+cd ../Talk.java
+
+jpa-new-field --named room --type com.github.adminfaces.app.model.Room --relationship-type Many-to-One --inverse-field-name talks ;
+
+constraint-add --on-property speaker --constraint NotNull ;
+
+constraint-add --on-property room --constraint NotNull ;
+
+scaffold-setup --provider AdminFaces ;
+
+scaffold-generate --provider AdminFaces --entities com.github.adminfaces.app.model.* ;
+
+adminfaces-test-harness-setup ;
+
+adminfaces-new-service-test --target-services com.github.adminfaces.app.service.* ;
+
+build test --profile it-tests ;
+
+;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="admin_mobile"><a class="anchor" href="#admin_mobile"></a>9. Admin Mobile</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="http://github.com/adminfaces/admin-mobile" target="_blank" rel="noopener">Admin Mobile</a> is a simple <a href="https://developer.android.com/studio/index.html" target="_blank" rel="noopener">Android Studio</a> project which uses <a href="https://developer.android.com/reference/android/webkit/WebView.html" target="_blank" rel="noopener">Webview</a> to create an <a href="https://www.mobiloud.com/blog/native-web-or-hybrid-apps/" target="_blank" rel="noopener">hybrid web app</a> based on Admin Showcase.</p>
@@ -2512,7 +2824,7 @@ Besides filtering the <code>filter</code> helper class also holds <strong>pagina
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0-RC21<br>
-Last updated 2019-03-19 13:52:40 UTC
+Last updated 2019-03-20 01:09:18 UTC
 </div>
 </div>
 </body>
