@@ -50,4 +50,3 @@ permalink:     /:title.html
 paginate: 10
 paginate_path: /page:num
 timezone:      null
-
